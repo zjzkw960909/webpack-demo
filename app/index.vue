@@ -1,17 +1,19 @@
-<template>
-<div id="app">
-    <div class="example">{{ msg }}</div>
-</div>
+<template lang='pug'>
+#app
+    .example {{ msg }}
+    Page(:page=3, :pages=13)
 </template>
 
 <script>
+import Page from '../components/Page'
 export default {
-  name: 'index',
-  data () {
-    return {
-      msg: 'Hello world!'
+    name: 'index',
+    components: {Page},
+    data () {
+        return {
+            msg: 'Hello world!2'
+        }
     }
-  }
 }
 </script>
 
