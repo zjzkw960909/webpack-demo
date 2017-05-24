@@ -1,5 +1,6 @@
 <template lang='pug'>
 #app
+    .test
     .example {{ msg }}
     Page(:page=3, :pages=13)
 </template>
@@ -11,7 +12,7 @@ export default {
     components: {Page},
     data () {
         return {
-            msg: 'Hello world!2'
+            msg: 'Hello world!'
         }
     }
 }
@@ -19,6 +20,6 @@ export default {
 
 <style>
 .example {
-  color: red;
+    color: red;
 }
 </style>
